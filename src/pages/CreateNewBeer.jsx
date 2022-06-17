@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import NavBar from "./../components/Navbar";
 import { usestate } from "react";
 import axios from "axios";
@@ -47,4 +47,4 @@ const CreateNewBeer = () => {
   );
 };
 
-export default CreateNewBeer;
+export default CreateNewBeer; */

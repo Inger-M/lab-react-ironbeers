@@ -5,19 +5,22 @@ import RandomBeerPage from "./pages/RandomBeerPage";
 import SingleBeerPage from "./pages/SingleBeerPage";
 import axios from "axios";
 import { useEffect, useState } from "react/cjs/react.production.min";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import "../src/App.css";
 
 function App() {
-  const [beersData, setbeersData] = useState([]);
-
-  useEffect(() => {
-    const getData = async () => {
-      const data = await axios.get(apiUrl);
-      setbeerData(data.data);
-    };
-    getData();
-  }, []);
-
-  return <div className="App">npm</div>;
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+      npm
+    </div>
+  );
 }
 
 export default App;
