@@ -5,7 +5,7 @@ const SingleBeerPage = () => {
   return (
     <div>
       <NavBar />
-      SingleBeerPage
+      SingleBeerPage og prut prut
     </div>
   );
 };

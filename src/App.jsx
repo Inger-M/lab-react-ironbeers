@@ -13,12 +13,14 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/beers" element={<ListAllBeers />} />
+          <Route path="/beers/:id" element={<SingleBeerPage />} />
+          <Route path="/random-beer" element={<RandomBeerPage />} />
+          <Route path="/new-beer" element={<CreateNewBeer />} />
         </Routes>
       </BrowserRouter>
-      npm
     </div>
   );
 }

@@ -9,7 +9,7 @@ import BeersNew from "../assets/new-beer.png";
 function HomePage() {
   return (
     <div>
-      <NavLink to="/ListAllBeers">
+      <NavLink to="/beers">
         <a href="" className="BeersList">
           <img src={BeersList} alt="home gif" className="BeersList" />
         </a>{" "}
@@ -20,7 +20,7 @@ function HomePage() {
         above.
       </p>
 
-      <NavLink to="/RandomBeerPage">
+      <NavLink to="/random-beer">
         <a href="" className="BeersRandom">
           <img src={BeersRandom} alt="home gif" className="BeersRandom" />
         </a>{" "}
@@ -28,7 +28,7 @@ function HomePage() {
       <h1>Random Beer</h1>
       <p>If you want to see a random beer please click the picture above.</p>
 
-      <NavLink to="/CreateNewBeer">
+      <NavLink to="/new-beer">
         <a href="" className="BeersNew">
           <img src={BeersNew} alt="home gif" className="BeersNew" />
         </a>{" "}
