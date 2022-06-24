@@ -10,8 +10,11 @@ export const listBeers = () => {
   });
 };
 
-export const loadBeer = (id) =>
-  beersApi.get(`/${id}`).then((response) => response.data);
+export const loadBeer = (id) => {
+  return beersApi.get(`/${id}`).then((response) => {
+    return response.data;
+  });
+};
 
 export const randomBeer = () =>
   beersApi
